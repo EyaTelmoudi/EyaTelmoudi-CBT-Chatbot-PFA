@@ -1,0 +1,69 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height of the viewport */
+    position: relative;
+    color: rgb(3, 0, 8);
+}
+
+.background-image {
+    position: absolute;
+
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;
+}
+
+.image-background {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Makes sure the image covers the full area */
+    opacity: 0.9;
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the background */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+.button-login, .button-logout, .explore-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-login {
+    background-color: #e67e22; /* adjust color */
+    color: white;
+}
+
+.button-logout {
+    background-color: #c0392b; /* adjust color */
+    color: white;
+}
+
+.explore-button {
+    background-color: #2980b9; /* adjust color */
+    color: white;
+}
+
+.button-login:hover,
+.button-logout:hover,
+.explore-button:hover {
+    opacity: 0.8;
+}

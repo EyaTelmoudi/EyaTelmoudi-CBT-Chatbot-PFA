@@ -1,0 +1,18 @@
+.logout-button {
+    position: fixed;
+    bottom: 20px; /* Ajuste la distance du bas de l'écran */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Assure-toi qu'il est au-dessus des autres éléments */
+    padding: 10px 20px;
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #c9302c;
+  }

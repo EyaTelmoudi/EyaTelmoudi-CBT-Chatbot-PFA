@@ -1,0 +1,123 @@
+/* form.css */
+
+/* Conteneur principal du formulaire */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+  }
+  
+  /* Animation de survol pour le formulaire */
+  .form-container:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Titres */
+  h1 {
+    color: #1e40af;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Sous-titres */
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #4b5563;
+    margin-bottom: 20px;
+  }
+  
+  /* Style pour les questions */
+  .question-item {
+    background-color: #f9fafb;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Mise en forme des options de réponses */
+  .option-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f1f5f9;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .option-label:hover {
+    transform: scale(1.05);
+    background-color: #e0f2fe;
+  }
+  
+  /* Style des boutons radios */
+  input[type="radio"] {
+    display: none;
+  }
+  
+  /* Lorsque l'option est sélectionnée */
+  input[type="radio"]:checked + .option-label {
+    background-color: #3b82f6;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  /* Bouton de soumission */
+  button {
+    background-color: #1d4ed8;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+  }
+  
+  /* Résultat du score */
+  .score-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #d1fae5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .score-container p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #065f46;
+  }
+  
+  /* Styles pour les scores bas */
+  .score-low {
+    color: #064e3b;
+  }
+  
+  /* Styles pour les scores moyens */
+  .score-medium {
+    color: #f59e0b;
+  }
+  
+  /* Styles pour les scores élevés */
+  .score-high {
+    color: #dc2626;
+  }
